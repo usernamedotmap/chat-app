@@ -14,8 +14,8 @@ const Search = () => {
     e.preventDefault();
     if (!search) return;
     if (search.length < 3) {
-      return toast.error("Hayss. At least 3 characters long");
-    }
+      toast.error("Hayss. At least 3 characters long");
+    } 
 
     const conversation = conversations.find((c) =>
       c.fullName.toLowerCase().includes(search.toLowerCase())
